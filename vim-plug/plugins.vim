@@ -14,13 +14,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-
+    "looking for words 
     Plug 'easymotion/vim-easymotion'
-
+    "navigate throught tmux files
     Plug 'christoomey/vim-tmux-navigator'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     "Emmet for html and css autocomplete
     Plug 'mattn/emmet-vim'
-
+ 
+    "comment several lines at once
+    Plug 'preservim/nerdcommenter'
+    "fuzzy file: looking for files
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    "Vim airline just the color extension
+     Plug 'vim-airline/vim-airline'
 call plug#end()
+

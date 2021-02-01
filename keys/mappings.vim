@@ -12,9 +12,6 @@ nnoremap <M-l>    :vertical resize +2<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
-" Easy CAPS
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -29,18 +26,6 @@ nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better tabbing
-vnoremap < <gv
-vnoremap > >gv
-
-" Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
 
 " algunos cambios mios de NERDTREE,Easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
@@ -48,3 +33,13 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 "Emmet shortcuts
 let g:user_emmet_leader_key=','
+
+"coc esplorer shortcuts
+nmap <Leader>ñ :CocCommand explorer<CR>
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+:imap ii <Esc>

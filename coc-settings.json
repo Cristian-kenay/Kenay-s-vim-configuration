@@ -1,6 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "graphql","yaml",  "json", "python","php","phpls"],
-
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
@@ -10,5 +9,4 @@
     "UltiSnips",
     "~/.config/nvim/utils/snips"
   ]
-
-}
+  }
